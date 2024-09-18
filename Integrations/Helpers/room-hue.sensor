@@ -1,0 +1,8 @@
+  - name: "Room Hue Temperature"
+    state: {{ ( (states('sensor.room_hue_motion_sensor_2_lampotila') | float(default=0)) + 1.3 ) }}
+	unit_of_measurement: "°C"
+    device_class: temperature
+	state_class: measurement
+
+
+
