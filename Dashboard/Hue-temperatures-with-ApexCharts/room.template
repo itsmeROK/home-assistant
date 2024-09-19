@@ -1,0 +1,37 @@
+type: custom:apexcharts-card
+experimental:
+  color_threshold: true
+  brush: true
+graph_span: 24h
+brush:
+  selection_span: 6h
+series:
+  - entity: sensor.hue_motion_sensor_3_lampotila
+    color_threshold:
+      - value: 15
+        color: blue
+        opacity: 1
+      - value: 21
+        color: green
+      - value: 23
+        color: orange
+      - value: 25
+        color: red
+  - entity: sensor.hue_motion_sensor_3_lampotila
+    show:
+      in_brush: true
+    color_threshold:
+      - value: 15
+        color: blue
+        opacity: 1
+      - value: 21
+        color: green
+      - value: 23
+        color: orange
+      - value: 25
+        color: red
+header:
+  title: Room temperatures
+  show: true
+  show_states: true
+  colorize_states: true
