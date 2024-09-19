@@ -27,7 +27,7 @@ series:
     type: column
     data_generator: |
       return entity.attributes.raw_today.map((start, index) => {
-        return [new Date(start["start"]).getTime(), entity.attributes.raw_today[index]["value"]*100];
+        return [new Date(start["start"]).getTime(), entity.attributes.raw_today[index]["value"]];
       });
     color_threshold:
       - value: 1
