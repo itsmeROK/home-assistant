@@ -1,6 +1,6 @@
-# Install
+# Hue temperatures with Apex Charts
 
-## Brief instructions: 
+## Brief install instructions: 
 
 - Install Home Assistant Community Store [HACS](https://www.hacs.xyz/docs/use/configuration/basic/).
 - Open HACS from leftside menu and install [Nordpool integration](https://github.com/custom-components/nordpool) and install [ApexCharts Card](https://github.com/RomRider/apexcharts-card).
