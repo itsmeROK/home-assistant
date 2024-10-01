@@ -23,20 +23,26 @@ cards:
       legend: false
       icon_adaptive_color: false
       fill: fade
-    color_thresholds:
+      color_thresholds:
       - value: 0
-        color: blue
+        color: '#305cde'
       - value: 20
-        color: green
+        color: '#008000'
+      - value: 21
+        color: '#0f4d0f'
       - value: 22
-        color: green
+        color: '#4cbb17'
       - value: 23
-        color: yellow
+        color: '#efbf04'
+      - value: 24
+        color: '#f07200'
       - value: 25
-        color: red
+        color: '#ed2100'
+      - value: 27
+        color: '#cd1c18'
       - value: 30
-        color: darkred
-  - type: custom:mini-graph-card
+        color: '#ffa896'  
+    - type: custom:mini-graph-card
     entities:
       - entity: sensor.olkkari_hue_temperature_int
         name: 24h
@@ -55,16 +61,22 @@ cards:
       legend: false
       extrema: true
       fill: fade
-    color_thresholds:
+      color_thresholds:
       - value: 0
-        color: blue
+        color: '#305cde'
+      - value: 20
+        color: '#008000'
       - value: 21
-        color: green
+        color: '#0f4d0f'
       - value: 22
-        color: green
+        color: '#4cbb17'
       - value: 23
-        color: yellow
+        color: '#efbf04'
+      - value: 24
+        color: '#f07200'
       - value: 25
-        color: red
+        color: '#ed2100'
+      - value: 27
+        color: '#cd1c18'
       - value: 30
-        color: darkred
+        color: '#ffa896'
