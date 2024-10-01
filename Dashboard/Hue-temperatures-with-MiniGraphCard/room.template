@@ -1,0 +1,70 @@
+type: custom:stack-in-card
+cards:
+  - type: custom:mini-graph-card
+    entities:
+      - entity: sensor.olkkari_hue_temperature
+        name: Room temperature
+      - entity: sensor.olkkari_hue_temperature_int
+        name: Int
+        color: '#2196f3'
+        show_line: false
+        y_axis: secondary
+    hours_to_show: 5
+    line_width: 3
+    font_size: 75
+    hour24: true
+    points_per_hour: 4
+    animate: true
+    color_thresholds_transition: hard
+    show:
+      name: true
+      icon: true
+      state: true
+      legend: false
+      icon_adaptive_color: false
+      fill: fade
+    color_thresholds:
+      - value: 0
+        color: blue
+      - value: 20
+        color: green
+      - value: 22
+        color: green
+      - value: 23
+        color: yellow
+      - value: 25
+        color: red
+      - value: 30
+        color: darkred
+  - type: custom:mini-graph-card
+    entities:
+      - entity: sensor.olkkari_hue_temperature_int
+        name: 24h
+        y_axis: secondary
+    hours_to_show: 24
+    line_width: 3
+    font_size: 75
+    hour24: true
+    points_per_hour: 2
+    animate: false
+    color_thresholds_transition: hard
+    show:
+      name: true
+      icon: false
+      state: false
+      legend: false
+      extrema: true
+      fill: fade
+    color_thresholds:
+      - value: 0
+        color: blue
+      - value: 21
+        color: green
+      - value: 22
+        color: green
+      - value: 23
+        color: yellow
+      - value: 25
+        color: red
+      - value: 30
+        color: darkred
