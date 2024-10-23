@@ -24,11 +24,11 @@ fix +1.9
 
 - mi*
 hue_motion_sensor_4_lampotila
-fix +1.1
+fix +1.6
 
 - ra*
 hue_motion_sensor_3_lampotila
-fix +1.5
+fix +1.0
 
 - outdoor
 sensor.hue_outdoor_motion_sensor_1_lampotila
