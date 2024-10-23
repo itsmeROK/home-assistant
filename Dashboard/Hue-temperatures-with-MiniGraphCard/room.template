@@ -44,8 +44,12 @@ cards:
         color: '#ffa896'  
     - type: custom:mini-graph-card
     entities:
-      - entity: sensor.olkkari_hue_temperature_int
+      - entity: sensor.olkkari_hue_temperature
         name: 24h
+      - entity: sensor.olkkari_hue_temperature_int
+        name: Int
+        color: "#03A"
+        show_line: false
         y_axis: secondary
     hours_to_show: 24
     line_width: 3
